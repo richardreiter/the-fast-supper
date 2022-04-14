@@ -1,1 +1,1 @@
-web: gunicorn the-fast-supper.wsgi
+web: gunicorn thefastsupper.wsgi
