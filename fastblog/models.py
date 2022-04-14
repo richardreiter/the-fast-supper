@@ -41,3 +41,27 @@ class Post(models.Model):
     # helper method returns total number of likes from post
     def number_of_likes(self):
         return self.likes.count()
+
+
+"""
+Many thanks to Matt Rudge and CI's 'I Think Therefore I Blog'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/Django3blog
+"""
+
+
+class Comment(models.Model):
+    # foreign key, one-to-many relationship
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
+
+    class Meta:
+        # order posts on ascending order
+        ordering = ['created_on']
+
+    def __str__(self):
+        return f"Comment {self.body} by {self.name}"
