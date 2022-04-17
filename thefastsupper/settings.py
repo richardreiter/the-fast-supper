@@ -19,21 +19,25 @@ if os.path.isfile('env.py'):
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates') # templates loc
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')  # templates loc
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY') # environment variable
+SECRET_KEY = os.environ.get('SECRET_KEY')  # environment variable
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['the-fast-supper.herokuapp.com', 'localhost'] # heroku and local host
+ALLOWED_HOSTS = ['the-fast-supper.herokuapp.com', 'localhost']  # heroku and local host
 
-
+"""
+Many thanks to Matt Rudge and CI's 'I Think Therefore I Blog'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/Django3blog
+"""
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,9 +46,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'cloudinary_storage', # cloudinary library
+    'cloudinary_storage',  # cloudinary library
     'django.contrib.staticfiles',
-    'cloudinary', # cloudinary library
+    'cloudinary',  # cloudinary library
+    'django_summernote',  # summernote library
     'fastblog',
 ]
 
@@ -63,7 +68,7 @@ ROOT_URLCONF = 'thefastsupper.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR], # point to templates var
+        'DIRS': [TEMPLATES_DIR],  # point to templates var
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -90,7 +95,8 @@ WSGI_APPLICATION = 'thefastsupper.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) # Get DB env var from env/Heroku
+    # Get DB env var from env/Heroku
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 
@@ -132,9 +138,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage' # from cloudinary lib
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] # static files directories
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # unused, written for good practice
+# from cloudinary lib
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+# static files directories
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# unused, written for good practice
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
