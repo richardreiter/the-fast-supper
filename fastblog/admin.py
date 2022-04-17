@@ -25,6 +25,13 @@ class PostAdmin(SummernoteModelAdmin):
     summernote_fields = ('content')
 
 
+"""
+Many thanks to Matt Rudge and CI's 'I Think Therefore I Blog'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/Django3blog
+"""
+
+
 # decorator to register comment
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
