@@ -17,8 +17,16 @@ from django.contrib import admin
 # include method to allow URL from other files
 from django.urls import path, include
 
+"""
+Many thanks to Matt Rudge and CI's 'I Think Therefore I Blog'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/Django3blog
+"""
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     # register summernote urls
     path('summernote/', include('django_summernote.urls')),
+    path('', include('fastblog.urls'), name='fastblog_urls'),
 ]
