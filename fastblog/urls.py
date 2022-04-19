@@ -10,5 +10,6 @@ https://github.com/Code-Institute-Solutions/Django3blog
 
 urlpatterns = [
     # render this class as a view
-    path('', views.PostList.as_view(), name='home')
+    path('', views.PostList.as_view(), name='home'),
+    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
 ]
