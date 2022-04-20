@@ -46,12 +46,23 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth', # allauth package
+    'allauth.account', # allauth package
+    'allauth.socialaccount', # allauth package
     'cloudinary_storage',  # cloudinary library
     'django.contrib.staticfiles',
     'cloudinary',  # cloudinary library
     'django_summernote',  # summernote library
     'fastblog',
 ]
+
+# to handle multiple sites using one db
+SITE_ID = 1
+
+# redirect to home when login/out
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
