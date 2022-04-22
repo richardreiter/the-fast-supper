@@ -1,6 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+# reverse to allow look at the url according to urls.py
+from django.shortcuts import render, get_object_or_404, reverse
 # import generic library
 from django.views import generic, View
+from django.http import HttpResponseRedirect
 # import post model that view will based on
 from .models import Post
 from .forms import CommentForm
@@ -101,3 +103,20 @@ class PostDetail(View):
                 "liked": liked
             },
         )
+
+
+class PostLike(View):
+
+    def post(self, request, slug, *args, **kwargs):
+        # get relevant post
+        post = get_object_or_404(Post, slug=slug)
+        # toggle the state, check if post is already liked
+        if post.likes.filter(id=request.user.id).exists():
+            # if it is already liked, remove the like
+            post.likes.remove(request.user)
+        # if it hasn't been liked, add like
+        else:
+            post.likes.add(request.user)
+
+        # reload template/page to see results
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
