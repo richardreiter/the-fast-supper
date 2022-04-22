@@ -31,7 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')  # environment variable
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['the-fast-supper.herokuapp.com', 'localhost']  # heroku and local host
+# heroku and local host
+ALLOWED_HOSTS = ['the-fast-supper.herokuapp.com', 'localhost']
 
 """
 Many thanks to Matt Rudge and CI's 'I Think Therefore I Blog'
@@ -47,13 +48,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.sites',
-    'allauth', # allauth package
-    'allauth.account', # allauth package
-    'allauth.socialaccount', # allauth package
+    'allauth',  # allauth package
+    'allauth.account',  # allauth package
+    'allauth.socialaccount',  # allauth package
     'cloudinary_storage',  # cloudinary library
     'django.contrib.staticfiles',
     'cloudinary',  # cloudinary library
     'django_summernote',  # summernote library
+    'crispy_forms',  # crispy forms package
     'fastblog',
 ]
 
@@ -63,6 +65,9 @@ SITE_ID = 1
 # redirect to home when login/out
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+# crispy to use bootstrap classes for formatting
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -98,12 +103,6 @@ WSGI_APPLICATION = 'thefastsupper.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 DATABASES = {
     # Get DB env var from env/Heroku
