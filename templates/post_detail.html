@@ -81,10 +81,12 @@ https://github.com/Code-Institute-Solutions/Django3blog -->
         </div>
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
+                <!-- if boolean true, display approval message -->
                 {% if commented %}
                 <div class="alert alert-success" role="alert">
                     Your comment is awaiting approval
                 </div>
+                <!-- otherwise display comment form -->
                 {% else %}
                 <!-- comment only appears if user is authenticated -->
                 {% if user.is_authenticated %}
