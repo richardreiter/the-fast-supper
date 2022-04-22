@@ -38,8 +38,36 @@ https://github.com/Code-Institute-Solutions/Django3blog -->
                 <div class="row">
 
                     <div class="col-1">
-                        <!-- The number of likes goes before the closing strong tag -->
-                        <strong class="text-secondary"><i class="far fa-heart"></i> {{ post.number_of_likes }} </strong>
+                        <strong>
+                            <!-- only if user is authenticated -->
+                            {% if user.is_authenticated %}
+                            <!-- display inline bootstrap class -->
+                            <form action="{% url 'post_like' post.slug %}" class="d-inline" method="POST">
+                                {% csrf_token %}
+                                <!-- display solid heart if user liked -->
+                                {% if liked %}
+
+                                    <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                
+                                <!-- if user hasn't liked yet display an outline -->
+                                {% else %}
+
+                                <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like">
+                                    <i class="far fa-heart"></i>
+                                </button>
+
+                                {% endif %}
+
+                            </form>
+                            {% else %}
+                                <!-- if user is not authenticated, display standard outlined heart -->
+                                <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            {% endif %}
+                            <!-- display number of likes -->
+                            <span class="text-secondary">{{ post.number_of_likes }}</span>
+                        </strong>
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}

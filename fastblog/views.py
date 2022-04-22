@@ -105,6 +105,13 @@ class PostDetail(View):
         )
 
 
+"""
+Many thanks to Matt Rudge and CI's 'I Think Therefore I Blog'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/Django3blog
+"""
+
+
 class PostLike(View):
 
     def post(self, request, slug, *args, **kwargs):
