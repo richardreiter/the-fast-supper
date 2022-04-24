@@ -37,7 +37,6 @@
     Walkthrough project - a great reference, inspiration and example:
     https://github.com/Code-Institute-Solutions/Django3blog -->
     <!-- Navigation -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">The Fast Supper</a>
@@ -115,6 +114,23 @@
                     aria-label="Visit our Twitter (and opens in a separate tab)"><i class="fab fa-twitter ms-3"></i></a>
         </p>
     </footer>
+
+    <!-- Many thanks to Matt Rudge and CI's 'I Think Therefore I Blog'
+    Walkthrough project - a great reference, inspiration and example:
+    https://github.com/Code-Institute-Solutions/Django3blog -->
+    <!-- javascript -->
+    <script>
+        // boostrap js toolkit function to dismiss alert
+        setTimeout(function () {
+            // get id of messages div
+            let messages = document.getElementById("msg");
+            // assign a new bootstrap alert and pass in id above
+            let alert = new bootstrap.Alert(messages);
+            // close alert after 4 seconds
+            alert.close();
+        }, 4000);
+      </script>
+
 </body>
 
 </html>
