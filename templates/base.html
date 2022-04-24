@@ -74,6 +74,26 @@
     <!-- Many thanks to Matt Rudge and CI's 'I Think Therefore I Blog'
     Walkthrough project - a great reference, inspiration and example:
     https://github.com/Code-Institute-Solutions/Django3blog -->
+    <!-- messages container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <!-- for loop to iterate through messages -->
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                    <!-- message content rendered safe -->
+                    {{ message | safe }}
+                    <!-- dismiss button -->
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Many thanks to Matt Rudge and CI's 'I Think Therefore I Blog'
+    Walkthrough project - a great reference, inspiration and example:
+    https://github.com/Code-Institute-Solutions/Django3blog -->
     <main class="flex-shrink-0 main-bg">
         {% block content %}
         <!-- Main page content will be injected here -->
