@@ -20,10 +20,10 @@ https://github.com/Code-Institute-Solutions/Django3blog -->
                                 <!-- if word 'placeholder' is found in url, load placeholder feat img -->
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://i.ibb.co/gVx59QK/ocean-ng-L0x-Ot-Anv94-Y-unsplash.jpg">
+                                    src="https://i.ibb.co/gVx59QK/ocean-ng-L0x-Ot-Anv94-Y-unsplash.jpg" alt="Image of a wall clock">
                                 <!-- otherwise use uploaded img -->
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="Post featured image">
                                 {% endif %}
                                 <div class="image-flash">
                                     <!-- author details -->

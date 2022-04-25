@@ -17,7 +17,7 @@ https://github.com/Code-Institute-Solutions/Django3blog -->
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://i.ibb.co/gVx59QK/ocean-ng-L0x-Ot-Anv94-Y-unsplash.jpg" width="100%">
+                <img src="https://i.ibb.co/gVx59QK/ocean-ng-L0x-Ot-Anv94-Y-unsplash.jpg" alt="Image of a wall clock">
                 {% else %}
                 <img src=" {{ post.featured_image.url }}" width="100%">
                 {% endif %}
