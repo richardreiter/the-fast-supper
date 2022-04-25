@@ -2,10 +2,12 @@
 from django.shortcuts import render, get_object_or_404, reverse
 # import generic library
 from django.views import generic, View
+from django.views.generic import UpdateView
 from django.http import HttpResponseRedirect
 # import post model that view will based on
 from .models import Post
 from .forms import CommentForm
+from django.urls import reverse_lazy
 
 
 """
@@ -127,3 +129,15 @@ class PostLike(View):
 
         # reload template/page to see results
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+"""Many thanks to John Elder's 'Create A Simple Blog With Python
+and Django' project - a great reference, inspiration and example:
+https://www.youtube.com/watch?v=J7xaESAddDQ"""
+
+
+class UpdatePost(UpdateView):
+    model = Post
+    template_name = 'update_post.html'
+    fields = ['title', 'content', 'excerpt']
+    success_url = reverse_lazy('home')

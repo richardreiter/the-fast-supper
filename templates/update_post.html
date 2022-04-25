@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Edit your Blog Post{% endblock %}
+
+{% block content %}
+
+<!-- Many thanks to John Elder's 'Create A Simple Blog With Python
+and Django' project - a great reference, inspiration and example:
+https://www.youtube.com/watch?v=J7xaESAddDQ -->
+<div class="container">
+    <div class="col card mb-4 mt-3 left top">
+        <h3>Update Your Post</h3>
+    </div>
+</div>
+<!-- Make sure only logged in post author can edit it -->
+{% if user == post.author %}
+
+<div class="row p-4 p-md-5 mb-4 rounded">
+    <h4>Edit: {{ post.title }}</h4>
+    <div class="col-md-8 px-0">
+        <form method="POST" novalidate>
+            {% csrf_token %}
+
+            {{ form|crispy }}
+
+            <button type="submit" class="btn btn-success">Update</button>
+        </form>
+    </div>
+</div>
+
+{% else %}
+
+<!-- if not the author, tell user to login to update post -->
+<div class="row">
+    <div class="col-md-8 mt-3 offset-md-2">
+        <h3>Login</h3>
+        <p>Please <a class="link" href="{% url 'login' %}">login</a> to update your post.</p>
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}
