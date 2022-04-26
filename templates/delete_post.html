@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Delete your Blog Post{% endblock %}
+
+{% block content %}
+
+<!-- Many thanks to John Elder's 'Create A Simple Blog With Python
+and Django' project - a great reference, inspiration and example:
+https://www.youtube.com/watch?v=8NPOwmtupiI -->
+<div class="container">
+    <div class="col card mb-4 mt-3 left top">
+        <h3>Delete Your Post</h3>
+    </div>
+</div>
+<!-- only author can delete the post -->
+{% if user == post.author %}
+
+<br/><br/>
+<!-- display Post title -->
+<h3>Delete: {{ post.title }}</h3>
+<br>
+<div>
+
+    <form method="POST" novalidate>
+        {% csrf_token %}
+        <strong>Warning. You will not be able to retrieve this post after Deletion.</strong>
+        <br/><br/>
+        <button type="submit" class="btn btn-success">Delete this Post.</button>
+      </form>
+
+</div>
+ 
+{% else %}
+
+<!-- if not the author/admin, tell user to login to delete post -->
+<div class="row">
+    <div class="col-md-8 mt-3 offset-md-2">
+        <h3>Login</h3>
+        <p>Please <a class="link" href="{% url 'login' %}">login</a> to delete your post.</p>
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}

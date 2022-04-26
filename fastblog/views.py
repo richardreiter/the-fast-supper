@@ -2,7 +2,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 # import generic library
 from django.views import generic, View
-from django.views.generic import UpdateView
+from django.views.generic import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 # import post model that view will based on
 from .models import Post
@@ -140,4 +140,15 @@ class UpdatePost(UpdateView):
     model = Post
     template_name = 'update_post.html'
     fields = ['title', 'content', 'excerpt']
+    # success_url = reverse_lazy('home')
+
+
+"""Many thanks to John Elder's 'Create A Simple Blog With Python
+and Django' project - a great reference, inspiration and example:
+https://www.youtube.com/watch?v=J7xaESAddDQ"""
+
+
+class DeletePost(DeleteView):
+    model = Post
+    template_name = 'delete_post.html'
     success_url = reverse_lazy('home')

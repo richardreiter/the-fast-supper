@@ -11,8 +11,13 @@ https://github.com/Code-Institute-Solutions/Django3blog -->
             <div class="col-md-6 masthead-text">
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ post.title }}</h1>
-                <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }} | <small><a href="{% url 'update_post' post.slug %}">Edit</a></small></p>
+                <!-- Post author -->
+                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }} |
+                    <!-- Link to Edit post -->
+                     <small><a href="{% url 'update_post' post.slug %}">Edit</a></small> |
+                        <!-- Link to Delete post -->
+                      <small><a href="{% url 'delete_post' post.slug %}">Delete</a></small>
+                </p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
