@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% load i18n %}
+
+{% load account socialaccount %}
+
 {% load crispy_forms_tags %}
 
 {% block title %}Edit your Blog Post{% endblock %}
@@ -14,29 +18,29 @@ https://www.youtube.com/watch?v=J7xaESAddDQ -->
         <h3>Update Your Post</h3>
     </div>
 </div>
-<!-- Make sure only logged in post author can edit it -->
+<!-- Make sure only logged in post author & admin can edit it -->
 {% if user == post.author %}
 
 <div class="row p-4 p-md-5 mb-4 rounded">
-    <h4>Edit: {{ post.title }}</h4>
+    <h4>Edit: <strong>{{ post.title }}</strong></h4>
     <div class="col-md-8 px-0">
         <form method="POST" novalidate>
             {% csrf_token %}
 
             {{ form|crispy }}
 
-            <button type="submit" class="btn btn-success">Update</button>
+            <button type="submit" class="btn btn-warning">Update</button>
         </form>
     </div>
 </div>
 
 {% else %}
 
-<!-- if not the author, tell user to login to update post -->
+<!-- if not the author & admin, tell user to login as the author & admin to update post -->
 <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
         <h3>Login</h3>
-        <p>Please <a class="link" href="{% url 'login' %}">login</a> to update your post.</p>
+        <p>Please <a class="link" href="{% url 'account_login' %}">login</a> as the admin & author of the post to update it.</p>
     </div>
 </div>
 

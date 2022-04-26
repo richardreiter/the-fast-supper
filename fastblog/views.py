@@ -140,7 +140,8 @@ class UpdatePost(UpdateView):
     model = Post
     template_name = 'update_post.html'
     fields = ['title', 'content', 'excerpt']
-    # success_url = reverse_lazy('home')
+    # redirect to home page
+    success_url = reverse_lazy('home')
 
 
 """Many thanks to John Elder's 'Create A Simple Blog With Python
@@ -151,4 +152,5 @@ https://www.youtube.com/watch?v=J7xaESAddDQ"""
 class DeletePost(DeleteView):
     model = Post
     template_name = 'delete_post.html'
+    # redirect to home page
     success_url = reverse_lazy('home')

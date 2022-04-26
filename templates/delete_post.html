@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% load i18n %}
+
+{% load account socialaccount %}
+
 {% load crispy_forms_tags %}
 
 {% block title %}Delete your Blog Post{% endblock %}
@@ -19,26 +23,26 @@ https://www.youtube.com/watch?v=8NPOwmtupiI -->
 
 <br/><br/>
 <!-- display Post title -->
-<h3>Delete: {{ post.title }}</h3>
+<h4>You are about to delete the post: <strong>{{ post.title }}</strong></h4>
 <br>
 <div>
 
     <form method="POST" novalidate>
         {% csrf_token %}
-        <strong>Warning. You will not be able to retrieve this post after Deletion.</strong>
+        <strong>Are you sure you want to delete this blog post?</strong>
         <br/><br/>
-        <button type="submit" class="btn btn-success">Delete this Post.</button>
+        <button type="submit" class="btn btn-danger">Delete</button>
       </form>
 
 </div>
  
 {% else %}
 
-<!-- if not the author/admin, tell user to login to delete post -->
+<!-- if not the author/admin, tell user to login as the author & admin to delete post -->
 <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
         <h3>Login</h3>
-        <p>Please <a class="link" href="{% url 'login' %}">login</a> to delete your post.</p>
+        <p>Please <a class="link" href="{% url 'account_login' %}">login</a> as the admin & author of the post to delete it.</p>
     </div>
 </div>
 
