@@ -17,7 +17,7 @@ https://www.youtube.com/watch?v=8NPOwmtupiI -->
     <div class="col card mb-4 mt-3 left top">
         <h3>Delete Your Post</h3>
     </div>
-</div>
+
 <!-- only author can delete the post -->
 {% if user == post.author %}
 
@@ -32,6 +32,7 @@ https://www.youtube.com/watch?v=8NPOwmtupiI -->
         <strong>Are you sure you want to delete this blog post?</strong>
         <br/><br/>
         <button type="submit" class="btn btn-danger">Delete</button>
+        <a class="btn btn-primary" href="{% url 'home' %}" role="button">Back Home</a>
       </form>
 
 </div>
@@ -47,5 +48,7 @@ https://www.youtube.com/watch?v=8NPOwmtupiI -->
 </div>
 
 {% endif %}
+
+</div>
 
 {% endblock %}
