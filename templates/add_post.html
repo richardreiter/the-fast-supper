@@ -17,6 +17,8 @@ https://www.youtube.com/watch?v=m3efqF9abyg -->
 <div class="col card mb-4 mt-3 left top">
     <h1>Add Post</h1>
 
+    {% if user.is_authenticated and user.is_superuser %}
+
     <form method="POST">
         {% csrf_token %}
 
@@ -24,5 +26,15 @@ https://www.youtube.com/watch?v=m3efqF9abyg -->
         {{ form.as_p }}
 </div>
 <button type="submit" class="btn btn-success">Add post</button>
+
+{% else %}
+<!-- if not an admin, tell user to login as one to add a post -->
+<div class="row">
+    <div class="col-md-8 mt-3 offset-md-2">
+        <h3>Login</h3>
+        <p>Please <a class="link" href="{% url 'account_login' %}">login</a> as an admin to add a new post.</p>
+    </div>
+</div>
+{% endif %}
 
 {% endblock %}

@@ -49,9 +49,12 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
+                    <!-- if user is admin/superuser show add_post page -->
+                    {% if user.is_authenticated and user.is_superuser %}
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'add_post' %}">Add Post</a>
                     </li>
+                    {% endif %}
                     <!-- allauth logout/signup/login -->
                     {% if user.is_authenticated %}
                     <li class="nav-item">
