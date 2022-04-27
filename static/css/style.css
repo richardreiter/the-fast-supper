@@ -3,36 +3,31 @@ Walkthrough project - a great reference, inspiration and example:
 https://github.com/Code-Institute-Solutions/Django3blog */
 
 body {
-    background-color: #F9FAFC;
+    background-color: #F4FAFF;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
     padding-top: 6%;
     padding-bottom: 12%;
 }
 
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
     font-weight: 700;
+    font-style: italic;
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
-}
-
 .light-bg {
-    background-color: #fff;
+    background-color: white;
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #08090A;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #F4FAFF;
 }
 
 .card {
@@ -49,7 +44,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #7CC6FE;
 }
 
 .author {
@@ -113,7 +108,7 @@ body {
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #8789C0;
     color: #fff;
 }
 
