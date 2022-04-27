@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% load account socialaccount %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Edit your Blog Post{% endblock %}
+
+{% block content %}
+
+<!-- Many thanks to John Elder's 'Create A Simple Blog With Python
+and Django' project - a great reference, inspiration and example:
+https://www.youtube.com/watch?v=m3efqF9abyg -->
+
+<div class="col card mb-4 mt-3 left top">
+    <h1>Add Post</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <!-- django built in form -->
+        {{ form.as_p }}
+</div>
+<button type="submit" class="btn btn-success">Add post</button>
+
+{% endblock %}
