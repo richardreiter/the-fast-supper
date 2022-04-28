@@ -7,7 +7,7 @@ body {
     font-family: 'Chivo', sans-serif;
     font-weight: 300;
     padding-top: 12%;
-    padding-bottom: 8%;
+    padding-bottom: 12%;
 }
 
 .navbar-brand {
@@ -97,7 +97,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #7CC6FE;
+    color: #4A4A4F;
 }
 
 .post-title {

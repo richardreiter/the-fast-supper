@@ -164,7 +164,14 @@ https://www.youtube.com/watch?v=m3efqF9abyg"""
 class AddPost(CreateView):
     model = Post
     template_name = 'add_post.html'
-    # put all fields on page
-    fields = '__all__'
+    fields = [
+        'title',
+        'slug',
+        'author',
+        'featured_image',
+        'excerpt',
+        'content',
+        'status'
+        ]
     # redirect to home page
     success_url = reverse_lazy('home')
