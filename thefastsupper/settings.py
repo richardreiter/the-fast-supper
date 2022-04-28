@@ -42,6 +42,9 @@ DEBUG = True
 # heroku and local host
 ALLOWED_HOSTS = ['the-fast-supper.herokuapp.com', 'localhost']
 
+# to prevent 500 errors when login on deployed site
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 """
 Many thanks to Matt Rudge and CI's 'I Think Therefore I Blog'
 Walkthrough project - a great reference, inspiration and example:
