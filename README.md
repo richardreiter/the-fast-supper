@@ -66,7 +66,12 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 ### Design
 
-- 
+- The colour scheme was generated with [Coolors.](https://coolors.co/5dfdcb-7cc6fe-f4faff-8789c0-08090a)
+![Color scheme](media/images/palette.png)
+
+- [Google Fonts](https://fonts.google.com/) was used for the website's fonts. Inspiration on the choice of fonts (Chivo & Playfair Display) came from [this blog post.](https://artisanthemes.io/best-google-fonts-combinations-modern-agency-website/)
+
+![Fonts Used](media/images/fonts.png)
 
 ## Features
 
