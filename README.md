@@ -23,7 +23,22 @@ Visit the live site [here.](https://the-fast-supper.herokuapp.com/)
 
 ### User Stories
 
-- 
+Agile methodology tool:
+
+  - GitHub Projects was used to create and [manage a Kanban board](https://github.com/richardreiter/the-fast-supper/projects/1), for planning and implementing this project's functionalities.
+![Kanban Board The Fast Supper](media/images/tfs-kanban-board.png)
+
+- As a Site User I can view a list of posts so that I can easily select one to view.
+- As a Site User I can view a list of posts so that I can select one to read.
+- As a Site User I can click on a post so that I can read the full content.
+- As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
+- As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
+- As a Site User I can register an account so that I can comment and like.
+- As a Site User I can leave comments on a post so that I can be involved in the conversation.
+- As a Site User I can like or unlike a post so that I can interact with the content.
+- As a Site Admin I can create, read, update and delete posts (CRUD) so that I can manage my blog content both from the front and back-end.
+- As a Site Admin I can create draft posts so that I can finish writing the content later.
+- As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
 
 
 ### Wireframes
