@@ -16,9 +16,9 @@ https://github.com/Code-Institute-Solutions/Django3blog -->
                     <!-- if user is admin/superuser show Edit/Delete links -->
                     {% if user.is_authenticated and user.is_superuser %}
                     <!-- Link to Edit post -->
-                     <small><a href="{% url 'update_post' post.slug %}">Edit</a></small> |
+                     <small><a class="link" href="{% url 'update_post' post.slug %}">Edit</a></small> |
                         <!-- Link to Delete post -->
-                      <small><a href="{% url 'delete_post' post.slug %}">Delete</a></small>
+                      <small><a class="link" href="{% url 'delete_post' post.slug %}">Delete</a></small>
                     {% endif %}
                 </p>
             </div>

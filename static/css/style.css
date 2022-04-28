@@ -6,7 +6,7 @@ body {
     background-color: #F4FAFF;
     font-family: 'Chivo', sans-serif;
     font-weight: 300;
-    padding-top: 6%;
+    padding-top: 9%;
     padding-bottom: 12%;
 }
 
@@ -115,11 +115,11 @@ body {
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #7CC6FE;
 }
 
 .link {
-    color: #23BBBB;
+    color: #7CC6FE;
     text-decoration: none;
 }
 
