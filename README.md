@@ -43,6 +43,25 @@ Agile methodology tool:
 
 ### Wireframes
 
+The mockups below were done with the help of Balsamiq (for both desktop and mobile screens), these were useful to help visualise the project.
+
+- Desktop:
+  - Home page 
+  ![Home Desktop Mockup](media/images/desk-wireframe-home.png)
+  - Blog post page 
+  ![Post Desktop Mockup](media/images/desk-wireframe-post.png)
+  - Register page
+  ![Register Desktop Mockup](media/images/desk-wireframe-register.png)
+  - Login page
+  ![Login Desktop Mockup](media/images/desk-wireframe-login.png)
+
+- Mobile:
+  - Home page 
+  ![Home Mobile Mockup](media/images/mobile-wireframe-home.png)
+  - Register page
+  ![Register Mobile Mockup](media/images/mobile-wireframe-register.png)
+  - Login page
+  ![Login Mobile Mockup](media/images/mobile-wireframe-login.png)
 
 
 ### Design
