@@ -10,36 +10,36 @@ https://www.youtube.com/watch?v=8NPOwmtupiI -->
         <h3>Delete Your Post</h3>
     </div>
 
-<!-- only logged in superuser can delete post -->
-{% if user.is_authenticated and user.is_superuser %}
+    <!-- only logged in superuser can delete post -->
+    {% if user.is_authenticated and user.is_superuser %}
 
-<br/><br/>
-<!-- display Post title and confirmation message -->
-<h4>You are about to delete the post: <strong>{{ post.title }}</strong></h4>
-<br>
-<div>
+    <br /><br />
+    <!-- display Post title and confirmation message -->
+    <h4>You are about to delete the post: <strong>{{ post.title }}</strong></h4>
+    <br>
+    <div>
 
-    <form method="POST" novalidate>
-        {% csrf_token %}
-        <strong>Are you sure you want to delete this blog post?</strong>
-        <br/><br/>
-        <button type="submit" class="btn btn-danger">Delete</button>
-        <a class="btn btn-primary" href="{% url 'home' %}" role="button">Back Home</a>
-      </form>
+        <form method="POST" novalidate>
+            {% csrf_token %}
+            <strong>Are you sure you want to delete this blog post?</strong>
+            <br /><br />
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a class="btn btn-primary" href="{% url 'home' %}" role="button">Back Home</a>
+        </form>
 
-</div>
- 
-{% else %}
-
-<!-- if not an admin, tell user to login as one to delete post -->
-<div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-        <h3>Login</h3>
-        <p>Please <a class="link" href="{% url 'account_login' %}">login</a> as an admin to delete this post.</p>
     </div>
-</div>
 
-{% endif %}
+    {% else %}
+
+    <!-- if not an admin, tell user to login as one to delete post -->
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h3>Login</h3>
+            <p>Please <a class="link" href="{% url 'account_login' %}">login</a> as an admin to delete this post.</p>
+        </div>
+    </div>
+
+    {% endif %}
 
 </div>
 

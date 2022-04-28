@@ -16,9 +16,9 @@ https://github.com/Code-Institute-Solutions/Django3blog -->
                     <!-- if user is admin/superuser show Edit/Delete links -->
                     {% if user.is_authenticated and user.is_superuser %}
                     <!-- Link to Edit post -->
-                     <small><a class="link" href="{% url 'update_post' post.slug %}">Edit</a></small> |
-                        <!-- Link to Delete post -->
-                      <small><a class="link" href="{% url 'delete_post' post.slug %}">Delete</a></small>
+                    <small><a class="link" href="{% url 'update_post' post.slug %}">Edit</a></small> |
+                    <!-- Link to Delete post -->
+                    <small><a class="link" href="{% url 'delete_post' post.slug %}">Delete</a></small>
                     {% endif %}
                 </p>
             </div>
@@ -55,10 +55,10 @@ https://github.com/Code-Institute-Solutions/Django3blog -->
                                 <!-- display solid heart if user liked -->
                                 {% if liked %}
 
-                                    <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like">
-                                        <i class="fas fa-heart"></i>
-                                    </button>
-                                
+                                <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+
                                 <!-- if user hasn't liked yet display an outline -->
                                 {% else %}
 
@@ -70,8 +70,8 @@ https://github.com/Code-Institute-Solutions/Django3blog -->
 
                             </form>
                             {% else %}
-                                <!-- if user is not authenticated, display standard outlined heart -->
-                                <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            <!-- if user is not authenticated, display standard outlined heart -->
+                            <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
                             <!-- display number of likes -->
                             <span class="text-secondary">{{ post.number_of_likes }}</span>

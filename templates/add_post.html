@@ -6,29 +6,29 @@
 and Django' project - a great reference, inspiration and example:
 https://www.youtube.com/watch?v=m3efqF9abyg -->
 <div class="container">
-<div class="col card mb-4 mt-3 left top">
-    <h1>Add Post</h1>
+    <div class="col card mb-4 mt-3 left top">
+        <h1>Add Post</h1>
 
-    {% if user.is_authenticated and user.is_superuser %}
+        {% if user.is_authenticated and user.is_superuser %}
 
-    <form method="POST">
-        {% csrf_token %}
+        <form method="POST">
+            {% csrf_token %}
 
-        <!-- django built in form -->
-        {{ form.as_p }}
-        <button type="submit" class="btn btn-success">Add post</button>
-    </form>
-    
-</div>
+            <!-- django built in form -->
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-success">Add post</button>
+        </form>
 
-{% else %}
-<!-- if not an admin, tell user to login as one to add a post -->
-<div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-        <h3>Login</h3>
-        <p>Please <a class="link" href="{% url 'account_login' %}">login</a> as an admin to add a new post.</p>
     </div>
-</div>
+
+    {% else %}
+    <!-- if not an admin, tell user to login as one to add a post -->
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h3>Login</h3>
+            <p>Please <a class="link" href="{% url 'account_login' %}">login</a> as an admin to add a new post.</p>
+        </div>
+    </div>
 </div>
 {% endif %}
 

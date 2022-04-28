@@ -52,7 +52,9 @@ https://github.com/Code-Institute-Solutions/Django3blog
 
 class Comment(models.Model):
     # foreign key, one-to-many relationship
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
+    post = models.ForeignKey(
+        Post, on_delete=models.CASCADE, related_name='comments'
+        )
     name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()
