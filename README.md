@@ -12,7 +12,8 @@ Visit the live site [here.](https://the-fast-supper.herokuapp.com/)
 
 ### Project Goals
 
-- 
+- Create a community in which fasting enthusiasts are able to learn more about the subject and exchange ideas through the comment board on the blog posts.
+- Provide an educational platform, support and help motivate the users who are currently fasting or thinking about it.
 
 ### Target Audience
 
