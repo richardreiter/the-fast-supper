@@ -17,7 +17,9 @@ Visit the live site [here.](https://the-fast-supper.herokuapp.com/)
 
 ### Target Audience
 
-- 
+- Anyone who wants to learn more about fasting.
+- People currently on a fast who need a bit of support.
+- Fasting practicioners who want to exchange ideas with like-minded people.
 
 ### User Stories
 
