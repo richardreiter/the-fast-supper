@@ -12,8 +12,8 @@ https://www.youtube.com/watch?v=J7xaESAddDQ -->
         <h3>Update Your Post</h3>
     </div>
 </div>
-<!-- Make sure only logged in post author & admin can edit it -->
-{% if user == post.author %}
+<!-- Make sure only logged in superuser can edit it -->
+{% if user.is_authenticated and user.is_superuser %}
 
 <div class="row p-4 p-md-5 mb-4 rounded">
     <h4>Edit: <strong>{{ post.title }}</strong></h4>
@@ -31,11 +31,11 @@ https://www.youtube.com/watch?v=J7xaESAddDQ -->
 
 {% else %}
 
-<!-- if not the author & admin, tell user to login as the author & admin to update post -->
+<!-- if not an admin, tell user to login as one to update post -->
 <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
         <h3>Login</h3>
-        <p>Please <a class="link" href="{% url 'account_login' %}">login</a> as the admin & author of the post to update it.</p>
+        <p>Please <a class="link" href="{% url 'account_login' %}">login</a> as an admin to update this post.</p>
     </div>
 </div>
 

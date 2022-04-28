@@ -10,11 +10,11 @@ https://www.youtube.com/watch?v=8NPOwmtupiI -->
         <h3>Delete Your Post</h3>
     </div>
 
-<!-- only author can delete the post -->
-{% if user == post.author %}
+<!-- only logged in superuser can delete post -->
+{% if user.is_authenticated and user.is_superuser %}
 
 <br/><br/>
-<!-- display Post title -->
+<!-- display Post title and confirmation message -->
 <h4>You are about to delete the post: <strong>{{ post.title }}</strong></h4>
 <br>
 <div>
@@ -31,11 +31,11 @@ https://www.youtube.com/watch?v=8NPOwmtupiI -->
  
 {% else %}
 
-<!-- if not the author/admin, tell user to login as the author & admin to delete post -->
+<!-- if not an admin, tell user to login as one to delete post -->
 <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
         <h3>Login</h3>
-        <p>Please <a class="link" href="{% url 'account_login' %}">login</a> as the admin & author of the post to delete it.</p>
+        <p>Please <a class="link" href="{% url 'account_login' %}">login</a> as an admin to delete this post.</p>
     </div>
 </div>
 
