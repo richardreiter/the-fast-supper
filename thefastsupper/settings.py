@@ -37,7 +37,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')  # templates loc
 SECRET_KEY = os.environ.get('SECRET_KEY')  # environment variable
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+# To make sure loads and works
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # heroku and local host
 ALLOWED_HOSTS = ['the-fast-supper.herokuapp.com', 'localhost']

@@ -131,9 +131,11 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-"""Many thanks to John Elder's 'Create A Simple Blog With Python
+"""
+Many thanks to John Elder's 'Create A Simple Blog With Python
 and Django' project - a great reference, inspiration and example:
-https://www.youtube.com/watch?v=J7xaESAddDQ"""
+https://www.youtube.com/watch?v=J7xaESAddDQ
+"""
 
 
 class UpdatePost(UpdateView):
@@ -144,9 +146,11 @@ class UpdatePost(UpdateView):
     success_url = reverse_lazy('home')
 
 
-"""Many thanks to John Elder's 'Create A Simple Blog With Python
+"""
+Many thanks to John Elder's 'Create A Simple Blog With Python
 and Django' project - a great reference, inspiration and example:
-https://www.youtube.com/watch?v=J7xaESAddDQ"""
+https://www.youtube.com/watch?v=J7xaESAddDQ
+"""
 
 
 class DeletePost(DeleteView):
@@ -156,9 +160,11 @@ class DeletePost(DeleteView):
     success_url = reverse_lazy('home')
 
 
-"""Many thanks to John Elder's 'Create A Simple Blog With Python
+"""
+Many thanks to John Elder's 'Create A Simple Blog With Python
 and Django' project - a great reference, inspiration and example:
-https://www.youtube.com/watch?v=m3efqF9abyg"""
+https://www.youtube.com/watch?v=m3efqF9abyg
+"""
 
 
 class AddPost(CreateView):
