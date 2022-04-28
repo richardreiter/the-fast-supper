@@ -6,8 +6,8 @@ body {
     background-color: #F4FAFF;
     font-family: 'Chivo', sans-serif;
     font-weight: 300;
-    padding-top: 9%;
-    padding-bottom: 12%;
+    padding-top: 12%;
+    padding-bottom: 8%;
 }
 
 .navbar-brand {
@@ -16,6 +16,10 @@ body {
     font-weight: 700;
     font-style: italic;
     color: #4A4A4F;
+}
+
+.nav-link {
+    font-size: 1.2rem;
 }
 
 .light-bg {
@@ -50,7 +54,6 @@ body {
 .author {
     color: white;
     margin: 4px;
-    text-transform: uppercase;
 }
 
 .masthead {
@@ -94,7 +97,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #7CC6FE;
 }
 
 .post-title {
