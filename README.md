@@ -323,11 +323,15 @@ How to run this project locally:
 
 ### Content
 
-- 
+- The instructions on [how to reset/remove the latest Git commit from a repo](https://gist.github.com/CrookedNumber/8964442) were taken from [this GitHub Gist.](https://gist.github.com/CrookedNumber/8964442)
+- Many thanks to John Elder's Codemy for the ["Create A Simple Blog With Python
+and Django"](https://www.youtube.com/watch?v=tKSUokG3Y0w) which was a good reference and example. 
+- A huge thank you to Matt Rudge and Code Institute for the ["I Think Therefore I Blog" Walkthrough project](https://github.com/Code-Institute-Solutions/Django3blog) which was a great reference, inspiration and example.
 
 ### Media
 
-- 
+- All the website's images were taken from [Unsplash.](https://unsplash.com/)
+- All the blog posts' content was taken from this [WebMD link.](https://www.webmd.com/diet/obesity/ss/slideshow-fasting-overview)
 
 ### Other
 
