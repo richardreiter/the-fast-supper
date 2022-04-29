@@ -77,7 +77,16 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 ### Existing Features
 
-- 
+- __Navigation Bar__
+
+  - Navigation is a fully responsive feature on all pages, it includes links on the site's Logo (displaying to the left within the bar), Home, Register and Login pages (the 'Add Post' page only shows up for superusers).
+   ![Navigation Bar Superuser Logged In](media/images/tfs-nav-logged-in-admin.png)
+  - The Logout page shows up (and both Register/Login pages disappear) once the user has successfully registered/logged in.
+  ![Navigation Bar Logged Out](media/images/tfs-nav-logged-out.png)
+  ![Navigation Bar User Logged In](media/images/tfs-nav-logged-in-user.png)
+  - The navigation looks the same in each page to allow for easy navigation (without the user having to use the ‘back’ button), taking the user through a logical journey.
+  - This section makes it easy for the user to learn more about the site's different sections and contents.
+
 
 ### Features Left to Implement
 
