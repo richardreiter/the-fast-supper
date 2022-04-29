@@ -233,7 +233,13 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 ### Browser Testing
 
-- 
+- The Fast Supper website was tested on several browsers (without any issues - across different devices), including:
+  - Google Chrome (100.0.4896.127) (arm64)
+  - Mozilla Firefox (99.0.1 (64-bit))
+  - Safari (Version 15.4 (17613.1.17.1.13))
+  - Microsoft Edge
+  - Brave (Version 1.37.116 Chromium: 100.0.4896.127 (Official Build) (arm64))
+  - Vivaldi (4.3.2439.65 (Stable channel) (arm64))
 
 ### Fixed Bugs
 
