@@ -63,6 +63,8 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
   - Login page
   ![Login Mobile Mockup](media/images/mobile-wireframe-login.png)
 
+- Models Diagrams:
+  ![Models](media/images/tfs-models-diagrams.png)
 
 ### Design
 
@@ -175,6 +177,8 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
   - Google Fonts was used to import the fonts which are used on the website.
 - [Heroku](https://heroku.com/)
   - Heroku was used for hosting and deploying the game.
+- [Lucidchart](https://www.lucidchart.com/)
+  - Lucidchart was used for drawing the database models.
 - [PostgreSQL](https://www.postgresql.org/)
   - PostgreSQL for database management.
 - [Summernote](https://summernote.org/)
