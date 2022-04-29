@@ -241,9 +241,9 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
   - Brave (Version 1.37.116 Chromium: 100.0.4896.127 (Official Build) (arm64))
   - Vivaldi (4.3.2439.65 (Stable channel) (arm64))
 
-### Fixed Bugs
+### Bugs
 
-- 
+- When adding a new post via the front end page "Add Post", the placeholder image is always the one to show up, regardless of any other images being selected/uploaded. As a workaround the blog post's placeholder image can later be replaced via the Django Admin Panel.
 
 ## Deployment
 
