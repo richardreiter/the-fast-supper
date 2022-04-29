@@ -146,7 +146,10 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 ### Languages Used
 
-- 
+- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Python3](https://developer.mozilla.org/en-US/docs/Glossary/Python)
 
 ### Frameworks, Libraries & Programs Used
 
