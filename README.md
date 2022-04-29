@@ -123,6 +123,11 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
   - The page features a form where the user can fill out all the details for the new post, such as title, slug, author, image (upload a featured image), content, status (draft or published).
     ![Add Post](media/images/tfs-add-post-page.png)
 
+- __Edit Blog Post page__
+
+  - If the user is logged in as an admin, they are able to Edit any of the Blog posts, simply by clicking on the "Edit" link at the blog post's header.
+  - The page features a form where the user can edit the current post's details such as title, content and excerpt.
+    ![Edit Post](media/images/tfs-edit-post-page.png)
 
 
 ### Features Left to Implement
