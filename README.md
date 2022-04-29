@@ -92,6 +92,11 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
   - About section at home page to welcome and let the users know what the site is about.
    ![About section](media/images/tfs-about-section.png)
 
+- __Blog Posts section__
+
+  - The Blog posts section displays six posts at a time, with pagination ("NEXT", "PREV" buttons show up), in case there are seven or more posts.
+   ![Blog section](media/images/tfs-blog-post-section.png)
+
 
 ### Features Left to Implement
 
