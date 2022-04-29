@@ -241,13 +241,83 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
   - Brave (Version 1.37.116 Chromium: 100.0.4896.127 (Official Build) (arm64))
   - Vivaldi (4.3.2439.65 (Stable channel) (arm64))
 
-### Bugs
+### Known Bugs
 
 - When adding a new post via the front end page "Add Post", the placeholder image is always the one to show up, regardless of any other images being selected/uploaded. As a workaround the blog post's placeholder image can later be replaced via the Django Admin Panel.
 
 ## Deployment
 
-- 
+### Deploying on Heroku
+
+To deploy this application to [Heroku](https://dashboard.heroku.com/) from its GitHub repository, the following steps were taken:
+- Log into Heroku
+- Select "New" and "Create new app".
+- Name the new app, choose the region and click "Create app".
+- In the "Resources" tab, search for "postgres" at the add-ons text field, select the "Heroku Postgres", then "Hobby Dev", submit.
+- In the "Settings" tab, click on "Reveal Config Vars" and input the following key/values:
+  - CLOUDINARY_URL
+  - DATABASE_URL
+  - SECRET_KEY
+
+- Click on "Deploy" and select your deploy method and repository.
+- Click "Connect" on selected repository
+- Click "Deploy Branch" in the manual deploy section. -Heroku will now deploy the App.
+
+Development Environment
+- Create env.py, import os and input the following variables:
+    - os.environ["DATABASE_URL"] = "postgres://....."
+    - os.environ["SECRET_KEY"] = "....."
+    - os.environ["CLOUDINARY_URL"] = "....."
+    - os.environ["DEVELOPMENT"] = "True"
+    - os.environ["CLOUDINARY_CLOUD_NAME"] = '.....'
+    - os.environ["CLOUDINARY_API_KEY"] = '.....'
+    - os.environ["CLOUDINARY_API_SECRET"] = '.....'
+
+- Create the requirements.txt file.
+`pip3 freeze --local > requirements.txt`
+- Create Procfile.
+- Click "Deploy" at the top to go to the Deployment settings tab.
+- Choose "GitHub" as the deployment method.
+- Choose "Automatic deploys" if you would like to enable a chosen branch to be automatically deployed with every GitHub push to the branch.
+- Use "Manual deploy" to deploy the current state of a branch to this app (simply enter the name of the branch and "Deploy Branch").
+- Once the deployment has completed click on "View app".
+
+### Final Deployment on Heroku
+GitHub had a security breach and manual deployment via CLI was necessary.
+
+- Set debug flag to false in settings.py `DEBUG = FALSE`.
+- In settings.py add `X_FRAMES_OPTIONS = SAMEORIGIN`.
+- Login to heroku, enter credentials.
+`heroku login -i`
+- Get your app name from heroku.
+`heroku apps`
+- Set the heroku remote. (Replace <app_name> with the actual app name).
+`heroku git:remote -a <app_name>`
+- Add, commit and push to github
+`git add . && git commit -m "Deploy to Heroku via CLI"`
+- Push to both github and heroku:
+`git push origin main`
+`command: git push heroku main`
+
+### Forking the Repository
+
+By forking the GitHub Repository you make a copy of the original repository on you GitHub account to view and/or make changes without affecting the original repository.
+
+To achieve that simply:
+
+- Log into GitHub.
+- Locate the GitHub Repository in question.
+- At the top of the repository, on the right side of the page, select "Fork"
+- You should now have a copy of the original repository in your GitHub account.
+
+### Creating a Clone
+
+How to run this project locally:
+
+- Install the GitPod Browser Extension for Google Chrome.
+- Log into GitHub.
+- Locate the GitHub Repository you'd like to clone in question.
+- Click the green "GitPod" button in the top right corner of the repository. This will create a new GitPod.
 
 ## Credits 
 
