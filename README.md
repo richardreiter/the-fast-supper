@@ -153,7 +153,32 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 ### Frameworks, Libraries & Programs Used
 
-- 
+- [Balsamiq](https://balsamiq.com/)
+  - Balsamiq was used to make desktop/mobile mockups in order to visualise the project.
+- [Bootstrap](https://getbootstrap.com/)
+  - Bootstrap template.
+- [Cloudinary](https://cloudinary.com/)
+  - Cloudinary was used to store the project's images.
+- [Django](https://www.djangoproject.com/)
+  - Django was used to build the app.
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/overview.html/)
+  - Django allauth for account management.
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+  - Django Crispy Forms for rendering elegant DRY forms.
+- [Font Awesome](https://fontawesome.com/)
+  - Font Awesome was used to add icons to improve the design of the website.
+- [Git](https://git-scm.com/) & [Gitpod](https://gitpod.io/)
+  - Git was used for version control via the Gitpod terminal in order to commit to Git and push to GitHub.
+- [GitHub](https://github.com/)
+  - GitHub was used for version control.
+- [Google Fonts](https://fonts.google.com/)
+  - Google Fonts was used to import the fonts which are used on the website.
+- [Heroku](https://heroku.com/)
+  - Heroku was used for hosting and deploying the game.
+- [PostgreSQL](https://www.postgresql.org/)
+  - PostgreSQL for database management.
+- [Summernote](https://summernote.org/)
+  - Summernote WYSIWYG for Bootstrap.
 
 ## Testing
 
