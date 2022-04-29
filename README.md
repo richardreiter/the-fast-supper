@@ -125,9 +125,15 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 - __Edit Blog Post page__
 
-  - If the user is logged in as an admin, they are able to Edit any of the Blog posts, simply by clicking on the "Edit" link at the blog post's header.
+  - If the user is logged in as an admin, they are able to Edit any of the Blog posts (both from the front and backend), simply by clicking on the "Edit" link at the blog post's header.
   - The page features a form where the user can edit the current post's details such as title, content and excerpt.
     ![Edit Post](media/images/tfs-edit-post-page.png)
+
+- __Delete Blog Post page__
+
+  - If the user is logged in as an admin, they are able to delete any of the Blog posts (both from the front and backend), simply by clicking on the "Delete" link at the blog post's header.
+  - The page displays the selected post for deletion's title, a warning message and two buttons (delete, back home).
+    ![Delete Post](media/images/tfs-delete-post-page.png)
 
 
 ### Features Left to Implement
