@@ -203,19 +203,23 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 ### Google Lighthouse
 
 - Google's Lighthouse was used for measuring the quality of the pages.
-  - Index Page (desktop) result:
+  - Home Page (desktop) result:
   ![Index Lighthouse PC result](media/images/tfs-desktop-lighthouse.png)
 
-  - Index Page (mobile) result:
+  - Home Page (mobile) result:
   ![Index Lighthouse PC result](media/images/tfs-mobile-lighthouse.png)
 
 ### Color Contrast Accessibility Checker
 
-- 
+- [a11y Color Contrast Accessibility Validator](https://color.a11y.com/) was used to analyse the contrast of the site and make sure it complies with website accessibilities regulations.
+  - Home Page result:
+  ![Home contrast result](media/images/tfs-home-contrast.png)
 
 ### Responsive Testing
 
-- 
+- __[Am I Responsive?](http://ami.responsivedesign.is/)__
+  - This design tool was used to show how responsive the website is and looks across 4 different viewports (Desktop, Laptop, Tablet and Mobile):
+![Responsive TFS](media/images/tfs-responsiveness.png)
 
 ### Device Testing
 
