@@ -186,13 +186,19 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 ## Testing
 
-### Testing User Stories from User Experience (UX) Section
-
-- 
-
 ### Validator Testing
 
-- 
+- HTML
+  - No errors/warnings were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-fast-supper.herokuapp.com%2F)
+  ![Home Page W3C validation result](media/images/tfs-html-validation.png)
+
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frichardreiter.github.io%2Fvinyl-exchange-club%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  ![CSS Jigsaw validation result](media/images/tfs-css-validation.png)
+
+- Python
+    - No errors were returned when passing through the [PEP8online check.](http://pep8online.com/)
+  ![PEP8online validation](media/images/tfs-python-validation.png)
 
 ### Google Lighthouse
 
