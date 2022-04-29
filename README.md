@@ -80,10 +80,10 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 - __Navigation Bar__
 
   - Navigation is a fully responsive feature on all pages, it includes links on the site's Logo (displaying to the left within the bar), Home, Register and Login pages (the 'Add Post' page only shows up for superusers).
-   ![Navigation Bar Superuser Logged In](media/images/tfs-nav-logged-in-admin.png)
+    ![Navigation Bar Superuser Logged In](media/images/tfs-nav-logged-in-admin.png)
   - The Logout page shows up (and both Register/Login pages disappear) once the user has successfully registered/logged in.
-  ![Navigation Bar Logged Out](media/images/tfs-nav-logged-out.png)
-  ![Navigation Bar User Logged In](media/images/tfs-nav-logged-in-user.png)
+    ![Navigation Bar Logged Out](media/images/tfs-nav-logged-out.png)
+    ![Navigation Bar User Logged In](media/images/tfs-nav-logged-in-user.png)
   - The navigation looks the same in each page to allow for easy navigation (without the user having to use the ‘back’ button), taking the user through a logical journey.
   - This section makes it easy for the user to learn more about the site's different sections and contents.
 
@@ -103,6 +103,21 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
   - Like the navigation section, the footer looks the same on each page (and features on all of the pages) to allow for easy navigation, taking the user through a logical journey.
 
 ![Footer](media/images/tfs-footer.png)
+
+- __Blog Post page__
+
+  - Featuring the post image, post title, post author and post date (two links "Edit" & "Delete" which only show up in case the logged in user is an admin).
+    ![Post header](media/images/tfs-post-header.png)
+  - Post body content, like and comment count.
+    ![Post body](media/images/tfs-post-body.png)
+  - Comment and likes counter which displays how many users liked that particular post, if the user clicks on the heart icon they like or unlike the post.
+    ![Comments Likes counter](media/images/tfs-post-like-counter.png)
+  - The comments section, features information displayed from all users who have posted comments, such as their username, date of the comment and comment's content. It also features a text field to the right, so users who are logged in are able to engage with each other/the post and submit a comment.
+    ![Comment section](media/images/tfs-post-comment-section.png)
+  - Comments moderation for the admins so they can approve or disapprove users' comments (once an user submits a comment, the message below appears to them).
+    ![Comment message](media/images/tfs-post-comment-approval.png)
+
+
 
 ### Features Left to Implement
 
