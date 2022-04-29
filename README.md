@@ -138,7 +138,9 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 ### Features Left to Implement
 
-- 
+- __Forum/Members Area__
+
+  - Implementing a forum/members area in the future could be really beneficial for The Fast Supper community, so the users would be able to have accountability partners as opposed to just exchanging ideas via the blog posts.
 
 ## Technologies Used
 
