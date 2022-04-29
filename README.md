@@ -117,6 +117,12 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
   - Comments moderation for the admins so they can approve or disapprove users' comments (once an user submits a comment, the message below appears to them).
     ![Comment message](media/images/tfs-post-comment-approval.png)
 
+- __Add Post page__
+
+  - If the user is logged in as an admin, they are able to add a blog post (both from the front and backend), simply by clicking on the "Add Post" navigation link.
+  - The page features a form where the user can fill out all the details for the new post, such as title, slug, author, image (upload a featured image), content, status (draft or published).
+    ![Add Post](media/images/tfs-add-post-page.png)
+
 
 
 ### Features Left to Implement
