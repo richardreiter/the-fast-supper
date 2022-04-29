@@ -94,9 +94,15 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 - __Blog Posts section__
 
-  - The Blog posts section displays six posts at a time, with pagination ("NEXT", "PREV" buttons show up), in case there are seven or more posts.
+  - The Blog posts section displays six posts at a time (with featured images, author, titles, post date, excerpt), feturing pagination ("NEXT", "PREV" buttons show up), in case there are seven or more posts.
    ![Blog section](media/images/tfs-blog-post-section.png)
 
+- __Footer__
+
+  - The footer area consists of three social links of the blog (Facebook, Instagram and Twitter - all of them, if clicked, open on a separate tab) and a "Copyright 2022" writing.
+  - Like the navigation section, the footer looks the same on each page (and features on all of the pages) to allow for easy navigation, taking the user through a logical journey.
+
+![Footer](media/images/tfs-footer.png)
 
 ### Features Left to Implement
 
