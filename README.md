@@ -87,6 +87,11 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
   - The navigation looks the same in each page to allow for easy navigation (without the user having to use the ‘back’ button), taking the user through a logical journey.
   - This section makes it easy for the user to learn more about the site's different sections and contents.
 
+- __About section__
+
+  - About section at home page to welcome and let the users know what the site is about.
+   ![About section](media/images/tfs-about-section.png)
+
 
 ### Features Left to Implement
 
