@@ -1,8 +1,8 @@
 # The Fast Supper
 
-[The Fast Supper](https://github.com/richardreiter/the-fast-supper) is a blog website dedicated to provide more information regarding fasting and its health benefits.
+[The Fast Supper](https://github.com/richardreiter/the-fast-supper) is a blog website dedicated to providing more information regarding fasting and its health benefits.
 
-The website is targeted at people who are curious about fasting, so these like-minded people can learn more about it, and engage, commenting on the blog posts.
+The website is targeted at people who are curious about fasting, so these like-minded people can learn more about the subject, and engage with each other by commenting on the blog posts.
 
 ![Responsive The Fast Supper](media/images/tfs-responsiveness.png)
 
@@ -13,13 +13,13 @@ Visit the live site [here.](https://the-fast-supper.herokuapp.com/)
 ### Project Goals
 
 - Create a community in which fasting enthusiasts are able to learn more about the subject and exchange ideas through the comment board on the blog posts.
-- Provide an educational platform, support and help motivate the users who are currently fasting or thinking about it.
+- Provide an educational platform by supporting and helping motivate the users who are currently fasting or thinking about it.
 
 ### Target Audience
 
 - Anyone who wants to learn more about fasting.
-- People currently on a fast who need a bit of support.
-- Fasting practicioners who want to exchange ideas with like-minded people.
+- People currently on a fast who need extra support.
+- Fasting practicioners who want to exchange and grow ideas with like-minded people.
 
 ### User Stories
 
@@ -87,7 +87,7 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
     ![Navigation Bar Logged Out](media/images/tfs-nav-logged-out.png)
     ![Navigation Bar User Logged In](media/images/tfs-nav-logged-in-user.png)
   - The navigation looks the same in each page to allow for easy navigation (without the user having to use the ‘back’ button), taking the user through a logical journey.
-  - This section makes it easy for the user to learn more about the site's different sections and contents.
+  - This section makes it easy for the user to learn more about the site's different sections and content.
 
 - __About section__
 
@@ -96,33 +96,33 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 - __Blog Posts section__
 
-  - The Blog posts section displays six posts at a time (with featured images, author, titles, post date, excerpt), feturing pagination ("NEXT", "PREV" buttons show up), in case there are seven or more posts.
+  - The Blog posts section displays six posts at a time (with featured images, authors, titles, post dates, excerpts), feturing pagination ("NEXT", "PREV" buttons show up), in case there are seven or more posts.
    ![Blog section](media/images/tfs-blog-post-section.png)
 
 - __Footer__
 
-  - The footer area consists of three social links of the blog (Facebook, Instagram and Twitter - all of them, if clicked, open on a separate tab) and a "Copyright 2022" writing.
+  - The footer area consists of three social links for the blog (Facebook, Instagram and Twitter - all of them, if clicked, open on a separate tab) and "Copyright 2022" writing.
   - Like the navigation section, the footer looks the same on each page (and features on all of the pages) to allow for easy navigation, taking the user through a logical journey.
 
 ![Footer](media/images/tfs-footer.png)
 
 - __Blog Post page__
 
-  - Featuring the post image, post title, post author and post date (two links "Edit" & "Delete" which only show up in case the logged in user is an admin).
+  - Featuring the posts image, posts title, posts author and posts date (two links "Edit" & "Delete" only appear if the logged in user is an admin).
     ![Post header](media/images/tfs-post-header.png)
   - Post body content, like and comment count.
     ![Post body](media/images/tfs-post-body.png)
   - Comment and likes counter which displays how many users liked that particular post, if the user clicks on the heart icon they like or unlike the post.
     ![Comments Likes counter](media/images/tfs-post-like-counter.png)
-  - The comments section, features information displayed from all users who have posted comments, such as their username, date of the comment and comment's content. It also features a text field to the right, so users who are logged in are able to engage with each other/the post and submit a comment.
+  - The comments section features information displayed from all users who have posted comments, such as their username, the date of the comment and the comment's content. It also features a text field to the right, where users who are logged in are able to engage with each other/the post and submit a comment.
     ![Comment section](media/images/tfs-post-comment-section.png)
-  - Comments moderation for the admins so they can approve or disapprove users' comments (once an user submits a comment, the message below appears to them).
+  - Comment moderation for the admins so they can approve or disapprove users' comments (once an user submits a comment, the message below appears to them).
     ![Comment message](media/images/tfs-post-comment-approval.png)
 
 - __Add Post page__
 
   - If the user is logged in as an admin, they are able to add a blog post (both from the front and backend), simply by clicking on the "Add Post" navigation link.
-  - The page features a form where the user can fill out all the details for the new post, such as title, slug, author, image (upload a featured image), content, status (draft or published).
+  - The page features a form where the user can fill out all the details for the new post, such as title, slug, author, image (upload a feature image), content, status (draft or published).
     ![Add Post](media/images/tfs-add-post-page.png)
 
 - __Edit Blog Post page__
@@ -134,7 +134,7 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 - __Delete Blog Post page__
 
   - If the user is logged in as an admin, they are able to delete any of the Blog posts (both from the front and backend), simply by clicking on the "Delete" link at the blog post's header.
-  - The page displays the selected post for deletion's title, a warning message and two buttons (delete, back home).
+  - The page displays the title of the post for deletion, a warning message and two buttons (delete, back home).
     ![Delete Post](media/images/tfs-delete-post-page.png)
 
 
@@ -142,7 +142,7 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 - __Forum/Members Area__
 
-  - Implementing a forum/members area in the future could be really beneficial for The Fast Supper community, so the users would be able to have accountability partners as opposed to just exchanging ideas via the blog posts.
+  - Implementing a forum/members area in the future could be highly beneficial for The Fast Supper's community. The users would be able to have accountability partners as opposed to just exchanging ideas via the blog posts.
 
 ## Technologies Used
 
@@ -188,7 +188,7 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 - Manual testing:
   
-  - All links, form submissions, admin privileges, user privileges, app functions were tested out work as intended.
+  - All links, form submissions, admin privileges, user privileges, app functions were tested out and work as intended.
 
 ### Testing User Stories
 
@@ -196,10 +196,10 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
   - As soon as the user lands at the home page, they are able to see all the available blog posts.
 
 - As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
-  - All the posts display a heart icon with a number right next to it (which indicate how many times the post has been liked).
+  - All the posts display a heart icon with a number next to it (which indicate how many times the post has been liked).
 
 - As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
-  - Whenever the user is reading a post, once they scroll down to the comments section, they may read any comments that users have left at that particular post.
+  - Whenever the user is reading a post, once they scroll down to the comments section, they can read any comments that users have left on that particular post.
 
 - As a Site User I can register an account so that I can comment and like.
   - The navigation bar is a section that makes it easy for the user to learn more about the site's different sections, and it includes a "Register" page. Once the user goes through the straightforward registration process, they are able to like and comment on different posts.
@@ -208,15 +208,15 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
   - Once the user is registered, they may click on the heart icon to simply like or unlike a post.
 
 - As a Site Admin I can create, read, update and delete posts (CRUD) so that I can manage my blog content both from the front and back-end.
-  - The site admin is able to perform all CRUD functionalities from either the Django admin panel or if they prefer, from the front-end as well. Once a superuser is logged in they are able to:
-    - See at the navigation bar a "Add Post" page, once they click on it they are greeted with a form to add a post.
-    - If they click at any blog post they may see two links at the blog post header which include "Edit" & "Delete".
+  - The site admin is able to perform all CRUD functionalities from either the Django admin panel, or if they prefer, from the front-end as well. Once a superuser is logged in they are able to:
+    - See an "Add Post" page in the navigation bar, once they click on this, they are greeted with a form to add a post.
+    - If they click on any blog post they will see two links at the blog post header, "Edit" & "Delete".
 
 - As a Site Admin I can create draft posts so that I can finish writing the content later.
-  - Whenever a post author decides to write a blog post, they have a dropdown option from the form which they can either choose "Draft" or "Publish".
+  - Whenever a post author decides to write a blog post, they have a dropdown option to pick from, and they can either choose the post status as "Draft" or "Publish".
 
 - As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
-  - Admins may be able to read submitted comments and decide via the panel if they'd like to approve or delete it.
+  - Admins may be able to read submitted comments and decide via the panel if they'd like to approve or delete them.
 
 ### Validator Testing
 
@@ -250,7 +250,7 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 ### Responsive Testing
 
 - __[Am I Responsive?](http://ami.responsivedesign.is/)__
-  - This design tool was used to show how responsive the website is and looks across 4 different viewports (Desktop, Laptop, Tablet and Mobile):
+  - This design tool was used to show how responsive the website is and looks across four different viewports (Desktop, Laptop, Tablet and Mobile):
 ![Responsive TFS](media/images/tfs-responsiveness.png)
 
 ### Device Testing
@@ -277,7 +277,7 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 - When adding a new post via the front end page "Add Post", the placeholder image is always the one to show up, regardless of any other images being selected/uploaded. As a workaround the blog post's placeholder image can later be replaced via the Django Admin Panel.
 
-- The sticky footer and fixed navbar appear to take a bigger part at lower resolution mobile devices, covering only partially some site elements (however this doesn't affect any functionality).
+- The sticky footer and fixed navbar appear larger on lower resolution mobile devices, partially covering some site elements (however this doesn't affect any functionality).
 
 ## Deployment
 
