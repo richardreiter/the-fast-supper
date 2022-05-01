@@ -186,6 +186,38 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 
 ## Testing
 
+- Manual testing:
+  
+  - All links, form submissions, admin privileges, user privileges, app functions were tested out work as intended.
+
+### Testing User Stories
+
+- As a Site User I can view a list of posts so that I can easily select one to view.
+  - As soon as the user lands at the home page, they are able to see all the available blog posts.
+
+- As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
+  - All the posts display a heart icon with a number right next to it (which indicate how many times the post has been liked).
+
+- As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
+  - Whenever the user is reading a post, once they scroll down to the comments section, they may read any comments that users have left at that particular post.
+
+- As a Site User I can register an account so that I can comment and like.
+  - The navigation bar is a section that makes it easy for the user to learn more about the site's different sections, and it includes a "Register" page. Once the user goes through the straightforward registration process, they are able to like and comment on different posts.
+
+- As a Site User I can like or unlike a post so that I can interact with the content.
+  - Once the user is registered, they may click on the heart icon to simply like or unlike a post.
+
+- As a Site Admin I can create, read, update and delete posts (CRUD) so that I can manage my blog content both from the front and back-end.
+  - The site admin is able to perform all CRUD functionalities from either the Django admin panel or if they prefer, from the front-end as well. Once a superuser is logged in they are able to:
+    - See at the navigation bar a "Add Post" page, once they click on it they are greeted with a form to add a post.
+    - If they click at any blog post they may see two links at the blog post header which include "Edit" & "Delete".
+
+- As a Site Admin I can create draft posts so that I can finish writing the content later.
+  - Whenever a post author decides to write a blog post, they have a dropdown option from the form which they can either choose "Draft" or "Publish".
+
+- As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
+  - Admins may be able to read submitted comments and decide via the panel if they'd like to approve or delete it.
+
 ### Validator Testing
 
 - HTML
@@ -244,6 +276,8 @@ The mockups below were done with the help of Balsamiq (for both desktop and mobi
 ### Known Bugs
 
 - When adding a new post via the front end page "Add Post", the placeholder image is always the one to show up, regardless of any other images being selected/uploaded. As a workaround the blog post's placeholder image can later be replaced via the Django Admin Panel.
+
+- The sticky footer and fixed navbar appear to take a bigger part at lower resolution mobile devices, covering only partially some site elements (however this doesn't affect any functionality).
 
 ## Deployment
 
